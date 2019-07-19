@@ -1,6 +1,6 @@
 .POSIX:
 
-PROGRAMS=hostid sync
+PROGRAMS=hostid mktemp sync
 
 all: $(PROGRAMS)
 
