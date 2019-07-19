@@ -21,7 +21,7 @@ factor() {
 }
 
 if [ -z "$*" ]; then
-	while read -r i; do
+	while IFS=\n read -r i; do
 		factor $i
 	done
 else
