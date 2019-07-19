@@ -1,4 +1,5 @@
-#define _POSIX_C_SOURCE 200809L
+#define _XOPEN_SOURCE
+#define _XOPEN_SOURCE_EXTENDED
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -14,7 +15,8 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "template must contain at least six 'X' characters\n");
 		return 1;
 	}
-	rmdir(template);
-	printf("%s\n", mkdtemp(template));
+	close(mkstemp(template));
+	unlink(template);
+	printf("%s\n", template);
 	return 0;
 }
