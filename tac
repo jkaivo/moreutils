@@ -1,4 +1,4 @@
-cat "$@" | awk "$(tail -n +3 $0)"
+cat "$@" | awk "$(tail -n +3 $0)"	# TODO: reverse order of arguments
 exit $?
 
 {
