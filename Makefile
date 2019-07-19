@@ -1,3 +1,3 @@
 .POSIX:
 
-all: sync
+all: hostid sync
