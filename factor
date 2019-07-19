@@ -20,6 +20,12 @@ factor() {
 	printf '\n'
 }
 
-for i in $*; do
-	factor $i
-done
+if [ -z "$*" ]; then
+	while read -r i; do
+		factor $i
+	done
+else
+	for i in $*; do
+		factor $i
+	done
+fi
