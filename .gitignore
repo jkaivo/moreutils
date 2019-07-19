@@ -1,3 +1,4 @@
 *.o
 hostid
 sync
+tac
