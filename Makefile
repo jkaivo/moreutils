@@ -1,6 +1,6 @@
 .POSIX:
 
-PROGRAMS=hostid sync tac
+PROGRAMS=hostid sync
 
 all: $(PROGRAMS)
 
