@@ -1,4 +1,17 @@
 *.o
+arch
 hostid
 mktemp
 sync
+base64
+factor
+nproc
+printenv
+readlink
+seq
+stdbuf
+tac
+uptime
+users
+vdir
+yes
