@@ -6,6 +6,7 @@ sync
 base64
 factor
 nproc
+pinky
 printenv
 readlink
 seq
