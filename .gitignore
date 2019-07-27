@@ -9,6 +9,7 @@ nproc
 pinky
 printenv
 readlink
+shuf
 seq
 stdbuf
 tac
