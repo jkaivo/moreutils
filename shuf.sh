@@ -7,6 +7,7 @@ exec awk "$(tail -n +2 $0)" "$@"
 
 END {
 	nprinted = 0;
+	srand();
 	while (nprinted < NR) {
 		line = int(rand() * NR);
 		if (!printed[line]) {
