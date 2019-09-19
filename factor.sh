@@ -1,6 +1,7 @@
 factor() {
 	n=$1
 	f=2
+	i=1
 
 	printf '%d:' $n
 
@@ -9,7 +10,8 @@ factor() {
 			printf ' %d' $f
 			n=$((n / f))
 		else
-			f=$((f + 1))
+			f=$((f + i))
+			i=2
 		fi
 	done
 
