@@ -11,6 +11,7 @@ printenv
 readlink
 shuf
 seq
+stat
 stdbuf
 tac
 uptime
